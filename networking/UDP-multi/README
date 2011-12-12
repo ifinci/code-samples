@@ -1,0 +1,2 @@
+UDPserver, UDPclient - trying to see if I need anything special to send data in both direction  - answer is - no. 
+multiServer, multiClient - first try on multicasting. I've added also test if the client (listener) can send data back to the server - answer is yes.
