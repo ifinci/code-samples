@@ -27,5 +27,4 @@ while 1:
         print "We got data!"
         print "FROM: ", addr
         print "DATA: ", data
-        sock.sendto(data.upper(), addr)
         

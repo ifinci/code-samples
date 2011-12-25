@@ -22,12 +22,7 @@ while 1:
         #Any subscribers to the multicast address will receive this data
         sock.sendto("Hello World "    + str(i), (MCAST_ADDR,MCAST_PORT) );
         i=i+1
-        #this is just for fun - test if someone sent out a reply. Note - this is not written 
-        #nicely, and will actually pick the answer on the next round (and only one answer per round, so
-        #if few clients send us answers, we'll get a queue of replies.
-        data, addr = sock.recvfrom(1024)
     except socket.error, e:
         pass
-    else:
-        print "got answer: ", data
+    
     
