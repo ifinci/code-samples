@@ -66,9 +66,10 @@ if __name__ == "__main__":
     #client(ip, port, "Hello World 2")
     #client(ip, port, "Hello World 3")
 
-    
-    #while (1):
-    #    pass
+    #loop needed to make sure the main program don't exit (as the servers' threads are deamon, 
+    #and will die once the last non-deamon thread is finished.
+    while (1):
+        pass
         
     #server.shutdown()
     #serverU.shutdown()
