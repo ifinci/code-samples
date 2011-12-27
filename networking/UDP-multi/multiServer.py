@@ -17,7 +17,7 @@ sock.settimeout(0.0)
 i = 0
 while 1:
     try:
-        time.sleep(3)
+        time.sleep(0.5)
         #send the data "hello, world" to the multicast addr: port
         #Any subscribers to the multicast address will receive this data
         sock.sendto("Hello World "    + str(i), (MCAST_ADDR,MCAST_PORT) );

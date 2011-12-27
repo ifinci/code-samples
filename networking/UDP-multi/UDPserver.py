@@ -16,5 +16,5 @@ class MyUDPHandler(SocketServer.BaseRequestHandler):
 
 if __name__ == "__main__":
     HOST, PORT = "localhost", 9999
-    server = SocketServer.UDPServer((HOST, PORT), MyUDPHandler)
+    server = SocketServer.UDPServer((HOST, PORT+100), MyUDPHandler)
     server.serve_forever()
